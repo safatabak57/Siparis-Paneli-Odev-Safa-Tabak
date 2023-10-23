@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        table{border: 2px solid black; margin: auto; text-align: center;
+              background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(195, 154, 86, 1) 35%, rgba(0, 212, 255, 1) 100%); 
+              color: white;}
+        
+        table th{ border: 2px solid black; padding: 10px 20px;}
+        
+        table td{ border: 2px solid black; padding: 10px 20px; margin: auto; text-align: center; }
+        
+        .baslık{color: red; margin: 15px 15px; padding: 0px 15px;}
+        
+        .onaybeklıyor{padding: 3px 3px; background-color: yellow; color: black; border-bottom-right-radius: 20px;} 
+        
+        .odemebeklıyor{padding: 3px  3px; background-color: yellow; color: black; border-bottom-right-radius: 20px;}
+        
+        .kargobekliyor{padding: 3px 3px; background-color: yellow; color: black; border-bottom-right-radius: 20px;}
+        
+        .tamamlandı{padding: 3px 3px; background-color: blue; color: white; border-radius: 20px 20px;}
+        
+        .teslimedildi{padding: 3px 3px; background-color: blue; color: white; border-radius: 20px 20px;}
+        
+        .onaylandı{padding: 3px 3px; background-color: green; color: white; border-radius: 20px 20px;}
+        
+        .odemetamamlandı{padding: 3px 3px; background-color: green; color: white; border-radius: 20px 20px;}
+        
+        .kargogonderıldı{padding: 3px 3px; background-color: green; color: white; border-radius: 20px 20px;}
+    
+    </Style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="baslık" colspan="9"><h1>Sipariş Paneli</h1></th>
+        </tr>   
+        <tr class="yatay">
+            <th>Sipariş Numarası</th>
+            <th>Sipariş Durumu</th>
+            <th>Ödeme Durumu</th>
+            <th>Kargo Durumu</th>
+            <th>Kargo Firması</th>
+            <th>Ödeme Tipi</th>
+            <th>Kullanıcı</th>
+            <th>Sipariş Tarihi</th>
+            <th>Toplam</th>
+        </tr>
+
+        <tr class="yatay1">
+            <td>0001</td>
+            <td class="onaybeklıyor">Onay Bekliyor</td>
+            <td class="odemebeklıyor">Ödeme Bekliyor</td>
+            <td class="kargobekliyor">Kargo Bekliyor</td>
+            <td>Mng Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Ayşe Çulhaoğlu <br>(ayse.culhaoglu@gmail.com)</td>
+            <td>22.10.2019<br>01:46:40</td>
+            <td>138,97 TL</td>
+        </tr>
+
+        <tr class="yatay2">
+            <td>0002</td>
+            <td class="tamamlandı">Tamamlandı</td>
+            <td class="odemetamamlandı">Ödeme Tamamlandı</td>
+            <td class="teslimedildi">Teslim Edildi</td>
+            <td>Aras Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Deniz Güneş <br>(gunesdeniz@hotmail.com)</td>
+            <td>22.10.2019 <br>01:22:00</td>
+            <td>130,97 TL</td>
+        </tr>
+
+        <tr class="yatay3">
+            <td>0003</td>
+            <td class="tamamlandı">Tamamlandı</td>
+            <td class="odemetamamlandı">Ödeme Tamamlandı</td>
+            <td class="teslimedildi">Teslim Edildi</td>
+            <td>Aras Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Fahri Yücesoy <br>(fyucesoy@outlook.com)</td>
+            <td>21.10.2019 <br>16:10:25</td>
+            <td>119,97 TL</td>
+        </tr>
+
+        <tr class="yatay4">
+            <td>0004</td>
+            <td class="onaylandı">Onaylandı</td>
+            <td class="odemetamamlandı">Ödeme Tamamlandı</td>
+            <td class="kargogonderıldı">Kargo Gönderildi</td>
+            <td>Mng Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Aysel Üretir <br>(ayselce@ayselyapimi.com)</td>
+            <td>18.10.2019 <br>17:16:09</td>
+            <td>259,99 TL</td>
+        </tr>
+
+        <tr class="yatay5">
+            <td>0005</td>
+            <td class="onaybeklıyor">Onay Bekliyor</td>
+            <td class="odemebeklıyor">Ödeme Bekliyor</td>
+            <td class="kargobekliyor">Kargo Bekliyor</td>
+            <td>Mng Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Mine Latif <br>(minelatif@gmail.com)</td>
+            <td>18.10.2019 <br>17:04:11</td>
+            <td>79,98 TL</td>
+        </tr>
+
+        <tr class="yatay6">
+            <td>0006</td>
+            <td class="onaybeklıyor">Onay Bekliyor</td>
+            <td class="odemebeklıyor">Ödeme Bekliyor</td>
+            <td class="kargobekliyor">Kargo Bekliyor</td>
+            <td>Yurtİçi Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Naz Uzay Temirçay <br>(nut@nutfaktoring.com)</td>
+            <td>17.10.2019 <br>16:13:38</td>
+            <td>1.259.89 TL</td>
+        </tr>
+
+        <tr class="yatay7">
+            <td>0007</td>
+            <td class="onaylandı">Onaylandı</td>
+            <td class="odemebeklıyor">Ödeme Bekliyor</td>
+            <td class="kargogonderıldı">Kargo Gönderildi</td>
+            <td>Sürat Kargo</td>
+            <td>Kapıda Ödeme</td>
+            <td>Emin Elalan <br>(emin.elalan@yahoo.com)</td>
+            <td>16.10.2019 <br>14:25:08</td>
+            <td>45,98 TL</td>
+        </tr>
+    </table>
+</body>
+</html>
